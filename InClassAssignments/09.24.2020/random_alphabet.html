@@ -2,14 +2,14 @@
     <head>
         <script type=text/javascript>
             var alphabet["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-            
+
             function random() {
                 var arrayVal = Math.floor(Math.random() * 25);
                 document.getElementById('random').innerHTML = alphabet[arrayVal];
             }
         </script>
     </head>
-    
+
     <body>
         <form>
         <input type="button" value="Generate" onclick="random()">
