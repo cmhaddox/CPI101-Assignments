@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(to bottom, rgba(140,20,252,0.2), rgba(255,165,0,0.4), rgba(255,0,0,0.4));
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+    text-align: left;
+}
+
+.playCountText {
+    display: inline-block;
+}
+
+p {
+    display: inline;
+}
+
+.winLoseTie {
+    font-weight: bolder;
+    padding-top: 10px;
+    color: firebrick;
+}
