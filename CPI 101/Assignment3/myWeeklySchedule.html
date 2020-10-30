@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            d3.select("body").style("background-color", "whitesmoke")
+        </script>
+        
+        <!--WEEKLY SCHEDULE-->
+        <h2 id="scheduleHead">Weekly Schedule</h2>
+        <p id="sunSchedule"><strong>Su:</strong> 8 sleep | 3 eat | 8 play | 2 study | 3 relax</p>
+        <p id="monSchedule"><strong>M:</strong> 8 sleep | 3 eat | <a style="color:lightseagreen;">5 play</a> | 2 study | 3 relax | 3 class</p>
+        <p id="tueSchedule"><strong>T:</strong> <a style="color:red;">7 sleep</a> | 3 eat | 3 play | 4 study | 2 relax | 5 class</p>
+        <p id="wedSchedule"><strong>W:</strong> 8 sleep | 3 eat | <a style="color:lightseagreen;">5 play</a> | 2 study | 3 relax | 3 class</p>
+        <p id="thuSchedule"><strong>Th:</strong> <a style="color:red;">7 sleep</a> | 3 eat | 3 play | 4 study | 2 relax | 5 class</p>
+        <p id="friSchedule"><strong>F:</strong> 9 sleep | 3 eat | 8 play | 2 study | 2 relax</p>
+        <p id="satSchedule"><strong>Sa:</strong> 8 sleep | 3 eat | 8 play | 2 study | 3 relax</p>
+        
+        <svg width="2000" height="1000">
+            
+            <!--SUNDAY-->
+            <text x="100" y="40" fill="black">Su</text>
+            
+            <text x="50" y="72" fill="black">Sleep</text>
+            <rect x="100" y="60" width="80" height="15" style="fill:#1E90FF"/>
+            
+            <text x="50" y="102" fill="black">Eat</text>
+            <rect x="100" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="50" y="132" fill="black">Play</text>
+            <rect x="100" y="120" width="80" height="15" style="fill:#3cb371"/>
+            
+            <text x="50" y="162" fill="black">Study</text>
+            <rect x="100" y="150" width="20" height="15" style="fill:#DAA520"/>
+            
+            <text x="50" y="192" fill="black">Relax</text>
+            <rect x="100" y="180" width="30" height="15" style="fill:#708090"/>
+            
+            <!--MONDAY-->
+            <text x="300" y="40" fill="black">M</text>
+            
+            <text x="250" y="72" fill="black">Sleep</text>
+            <rect x="300" y="60" width="80" height="15" style="fill:#1E90FF"/>
+            
+            <text x="250" y="102" fill="black">Eat</text>
+            <rect x="300" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="250" y="132" fill="black">Play</text>
+            <rect x="300" y="120" width="50" height="15" style="fill:#3cb371"/>
+            
+            <text x="250" y="162" fill="black">Study</text>
+            <rect x="300" y="150" width="20" height="15" style="fill:#DAA520"/>
+            
+            <text x="250" y="192" fill="black">Relax</text>
+            <rect x="300" y="180" width="30" height="15" style="fill:#708090"/>
+            
+            <text x="250" y="222" fill="black">Class</text>
+            <rect x="300" y="210" width="30" height="15" style="fill:#BA55D3"/>
+            
+            <!--TUESDAY-->
+            <text x="500" y="40" fill="black">T</text>
+            
+            <text x="450" y="72" fill="black">Sleep</text>
+            <rect x="500" y="60" width="70" height="15" style="fill:#1E90FF"/>
+            
+            <text x="450" y="102" fill="black">Eat</text>
+            <rect x="500" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="450" y="132" fill="black">Play</text>
+            <rect x="500" y="120" width="30" height="15" style="fill:#3cb371"/>
+            
+            <text x="450" y="162" fill="black">Study</text>
+            <rect x="500" y="150" width="40" height="15" style="fill:#DAA520"/>
+            
+            <text x="450" y="192" fill="black">Relax</text>
+            <rect x="500" y="180" width="20" height="15" style="fill:#708090"/>
+            
+            <text x="450" y="222" fill="black">Class</text>
+            <rect x="500" y="210" width="50" height="15" style="fill:#BA55D3"/>
+            
+            <!--WEDNESDAY-->
+            <text x="700" y="40" fill="black">W</text>
+            
+            <text x="650" y="72" fill="black">Sleep</text>
+            <rect x="700" y="60" width="80" height="15" style="fill:#1E90FF"/>
+            
+            <text x="650" y="102" fill="black">Eat</text>
+            <rect x="700" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="650" y="132" fill="black">Play</text>
+            <rect x="700" y="120" width="50" height="15" style="fill:#3cb371"/>
+            
+            <text x="650" y="162" fill="black">Study</text>
+            <rect x="700" y="150" width="20" height="15" style="fill:#DAA520"/>
+            
+            <text x="650" y="192" fill="black">Relax</text>
+            <rect x="700" y="180" width="30" height="15" style="fill:#708090"/>
+            
+            <text x="650" y="222" fill="black">Class</text>
+            <rect x="700" y="210" width="30" height="15" style="fill:#BA55D3"/>
+            
+            <!--THURSDAY-->
+            <text x="900" y="40" fill="black">T</text>
+            
+            <text x="850" y="72" fill="black">Sleep</text>
+            <rect x="900" y="60" width="70" height="15" style="fill:#1E90FF"/>
+            
+            <text x="850" y="102" fill="black">Eat</text>
+            <rect x="900" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="850" y="132" fill="black">Play</text>
+            <rect x="900" y="120" width="30" height="15" style="fill:#3cb371"/>
+            
+            <text x="850" y="162" fill="black">Study</text>
+            <rect x="900" y="150" width="40" height="15" style="fill:#DAA520"/>
+            
+            <text x="850" y="192" fill="black">Relax</text>
+            <rect x="900" y="180" width="20" height="15" style="fill:#708090"/>
+            
+            <text x="850" y="222" fill="black">Class</text>
+            <rect x="900" y="210" width="50" height="15" style="fill:#BA55D3"/>
+            
+            <!--FRIDAY-->
+            <text x="1100" y="40" fill="black">F</text>
+            
+            <text x="1050" y="72" fill="black">Sleep</text>
+            <rect x="1100" y="60" width="90" height="15" style="fill:#1E90FF"/>
+            
+            <text x="1050" y="102" fill="black">Eat</text>
+            <rect x="1100" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="1050" y="132" fill="black">Play</text>
+            <rect x="1100" y="120" width="80" height="15" style="fill:#3cb371"/>
+            
+            <text x="1050" y="162" fill="black">Study</text>
+            <rect x="1100" y="150" width="20" height="15" style="fill:#DAA520"/>
+            
+            <text x="1050" y="192" fill="black">Relax</text>
+            <rect x="1100" y="180" width="20" height="15" style="fill:#708090"/>
+            
+            <!--SATURDAY-->
+            <text x="1300" y="40" fill="black">Sa</text>
+            
+            <text x="1250" y="72" fill="black">Sleep</text>
+            <rect x="1300" y="60" width="80" height="15" style="fill:#1E90FF"/>
+            
+            <text x="1250" y="102" fill="black">Eat</text>
+            <rect x="1300" y="90" width="30" height="15" style="fill:#FF4500"/>
+            
+            <text x="1250" y="132" fill="black">Play</text>
+            <rect x="1300" y="120" width="80" height="15" style="fill:#3cb371"/>
+            
+            <text x="1250" y="162" fill="black">Study</text>
+            <rect x="1300" y="150" width="20" height="15" style="fill:#DAA520"/>
+            
+            <text x="1250" y="192" fill="black">Relax</text>
+            <rect x="1300" y="180" width="30" height="15" style="fill:#708090"/>
+            
+            <text x="50" y="300" fill="black">Increase:</text>
+            <rect x="115" y="288" width="15" height="15" style="fill:#FF0000"/>
+            
+            <text x="150" y="300" fill="black">Decrease:</text>
+            <rect x="220" y="288" width="15" height="15" style="fill:lightseagreen"/>
+        </svg>
+    </body>
+</html>

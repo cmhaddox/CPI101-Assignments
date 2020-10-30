@@ -1,0 +1,77 @@
+<!--
+    Name: Christopher Haddox
+    Email: cmhaddox@asu.edu
+-->
+
+<html>
+<head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+    <h2>CPI 101 Introduction to Informatics</h2>
+    <div id="viz"></div>
+    
+    <svg width="1000" height="1000">
+        <circle cx="50" cy="50" r="30" fill="yellow"></circle> <!--defining circle dimensions and fill color-->
+    </svg>
+    
+    <script type="text/javascript">
+    /*
+        d3.select('body').style("background-color","#D8D8D8");
+        d3.select('h2').style("color","blue");
+        
+        d3.select('h2').style("color",
+            function() {
+                return "rgb(" + Math.random() * 255 + ",100,50)";
+            }
+        );
+        
+        d3.select('h2').text("What?");
+    */
+    /*
+        var dataArray = [60,30,10]; //first circle is 60 60, second is 30 30, and third is 10 10
+        
+        var circles = d3.select("svg").selectAll("circle").data(dataArray); //circles uses d3.select to select svg circle and apply dataArray
+        
+        //starts creating svg graphics here
+        circles.enter()
+            .append("circle")
+            .attr("cx",function(d){ //dataArray[0]
+                return d;
+            })
+            .attr("cy", function (d){
+                return d;  
+            })
+            .attr("r", function (d){
+                return d;
+            })
+            .style("fill", function() {
+                return "rgb(" + Math.random() * 255 + ",100,50)"; //returns random fill color for both circles currently present
+            });
+    */
+        var circleData = [ 
+                            [10,"#dbf6f3",5], //format is location, color, radius/size
+                            [60,"#5dade2",20], 
+                            [100,"#2874a6",25], 
+                            [200,"#154360",30],
+                            [300,"#15ff60",30]
+                        ];          
+        var circles = d3.select("svg")      
+            .selectAll("circle")                 
+                .data(circleData);          
+        
+        circles.enter()    
+            .append("circle")    
+            .attr("cx", function (d) {        
+                return d[0];    
+            })    
+            .attr("cy", function (d) {        
+                return d[0];    
+            })    
+            .attr("r", function (d) {        
+                return d[2];    
+            })
+            .style("fill", function(d){return d[1]});
+    </script>
+</body>
+</html>
